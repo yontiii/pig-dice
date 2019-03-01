@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>PIG-DICE</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="text-danger">PIG DICE</h1>
+    <div class=" panel panel-warning">
+      <div class="panel-heading">
+        <h2>INSTRUCTIONS</h2>
+      </div>
+      <div class="panel-body">
+        <ul>
+          <li>The game has two players,player 1 and player 2.Kindly choose the player you want to be.</li>
+          <li>Each player only gets to roll the dice for three times in one round.</li>
+          <li>The rolled dice numbers are recorded and the numbers rolled showed beside the dice. </li>
+          <li>The cummulative scores are shown in an input field at the end.If a player chooses to hold their score it, is stored and added to consecutive dice rolls. </li>
+          <li>The first player to reach a hundred cummulative points wins the game.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="panel  panel-primary">
+          <div class="panel-heading">
+            <h2>PLAYER 1</h2>
+          </div>
+          <div class="panel-body">
+            <button type="button" class="btn btn-primary" onclick="roll()"  >ROLL 1</button>
+           <br>
+            <p id="roll1"></p>
+            <button type="button" name="button" class="btn btn-success">ROLL 2</button>
+           <br>
+            <button type="button" name="button" id="roll3" class="btn btn-danger">ROLL 3</button>
+             <br>
+            <button type="button" name="button" id="score">TOTAL SCORE</button>
+             <br>
+            <button type="button" name="button" class="btn btn-link">HOLD SCORE</button> <br>
+            <button type="button" name="button" class="btn btn-primary">CUMMULATIVE SCORE</button>
+            <input type="text" name="" value="" placeholder="cummulative score"> <br>
+          </div>
+        </div>
+      </div>
+        <div class="col-md-6">
+          <div class="panel  panel-primary">
+            <div class="panel-heading">
+              <h2>PLAYER 2</h2>
+            </div>
+            <div class="panel-body">
+              <button type="button" class="btn btn-primary">ROLL 1</button>
+              <p id="roll1"></p>
+               <br>
+              <button type="button" name="button" class="btn btn-success">ROLL 2</button>
+              <p id="roll2"></p>
+               <br>
+              <button type="button" name="button" id="roll3" class="btn btn-danger">ROLL 3</button>
+               <br>
+              <button type="button" name="button" id="score">TOTAL SCORE</button>
+               <br>
+              <button type="button" name="button" class="btn btn-link">HOLD SCORE</button> <br>
+              <button type="button" name="button" class="btn btn-primary">CUMMULATIVE SCORE</button>
+              <input type="text" name="" value="" placeholder="cummulative score"> <br>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
