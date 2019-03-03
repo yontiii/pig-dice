@@ -1,7 +1,7 @@
-#roll1,#woke{
-  background-color: #E53935;
-  color: white;
-  font-size: 20px;
-  height: 100px;
-  width: 100px;
+body{
+  background-image: url('https://images.pexels.com/photos/278918/pexels-photo-278918.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
 }
