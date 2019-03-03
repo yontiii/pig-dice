@@ -1,5 +1,5 @@
 body{
-  background-image: url('https://images.pexels.com/photos/264176/pexels-photo-264176.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-image: url('https://images.pexels.com/photos/944735/pexels-photo-944735.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -7,4 +7,12 @@ body{
   text-align: center;
   font-family: 'Lato', sans-serif;
   font-size: 18px;
+}
+#instructions{
+  display: none;
+}
+a{
+  text-decoration: none;
+  border-top: 2px;
+  background:   #F44336;
 }
