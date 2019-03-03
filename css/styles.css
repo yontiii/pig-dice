@@ -14,5 +14,10 @@ body{
 a{
   text-decoration: none;
   border-top: 2px;
-  background:   #F44336;
+  background: #FFCDD2;
+}
+a:hover{
+  text-decoration:none;
+  background: #EF5350;
+  color: white;
 }
