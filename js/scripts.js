@@ -7,12 +7,7 @@ function roll() {
   var totalScore = initScore += dice;
   output.unshift(score);
   console.log(output);
-  if (dice !==1){
-      document.getElementById("roll1").innerHTML=totalScore;
-  }
-  else{
-  var totalScore = 0;
-  }
+  document.getElementById("roll1").innerHTML=totalScore;
 }
 
 
@@ -22,6 +17,12 @@ function roll2(){
   var totalScore = initScore += dice2;
   document.getElementById("roll1").innerHTML=totalScore;
 }
+
+$(document).ready(function(){
+  $("#hold").click(function(){
+    $("#total").fadeIn();
+  })
+})
 
 
 

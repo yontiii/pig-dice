@@ -8,7 +8,7 @@ body{
   font-family: 'Lato', sans-serif;
   font-size: 18px;
 }
-#instructions{
+#instructions,#total{
   display: none;
 }
 a{
