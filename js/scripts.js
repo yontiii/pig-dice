@@ -12,7 +12,7 @@ function roll() {
     $(document).ready(function() {
       $("#player1").toggle(2000);
       $("#player1").fadeOut(2000);
-      $("#win").toggle(2000);
+      $("#win1").slideDown(2000);
     })
   } else {
     if (dice == 1) {
@@ -36,10 +36,9 @@ function roll2() {
   if (newScore >= 100) {
     $(document).ready(function() {
       $("#player2").fadeOut(2000);
-      $("#win").toggle(2000);
+      $("#win2").slideDown(2000);
     })
-  }
-  else{
+  } else {
     if (dice2 == 1) {
       $(document).ready(function() {
         $("#player2").fadeOut(2000);
@@ -48,14 +47,14 @@ function roll2() {
     } else {
       document.getElementById("roll2").innerHTML = newScore;
     }
-  }  
+  }
 }
 
 //user interface logic
 $(document).ready(function() {
   $("#hold").click(function() {
     $("#total").toggle(2000);
-    $("#player1").fadeOut(2000);
+    $("#player1").hide();
     $("#player2").toggle(2000);
   })
   $("#instruct").click(function() {
@@ -63,7 +62,7 @@ $(document).ready(function() {
   })
   $("#hold2").click(function() {
     $("#total2").toggle(2000);
-    $("#player2").fadeOut(2000);
+    $("#player2").hide(2000);
     $("#player1").toggle(2000);
   })
   $("#pass1").click(function() {
@@ -73,5 +72,8 @@ $(document).ready(function() {
   $("#pass2").click(function() {
     $("#alert2").toggle(2000);
     $("#player2").toggle(2000);
+  })
+  $("#restart").click(function() {
+    location.reload(true);
   })
 })
