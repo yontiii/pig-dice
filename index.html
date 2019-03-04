@@ -55,22 +55,28 @@
           </div>
         </div>
       </div>
-      <div class="col-md-5">
-        <div class="panel panel-info">
-          <div class="panel-heading">
-            <h2>PLAYER 2</h2>
-          </div>
-          <div class="panel body">
-            <h4>CURRENT ROLL</h4>
-            <p id="score"></p>
-          </div>
-          <div class="panel-footer">
-            <h4>TOTAL SCORE</h4>
-            <p id="roll"></p>
-          </div>
+    </div>
+
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h2>PLAYER 2</h2>
+        </div>
+        <div class="panel body">
+          <h4>CURRENT ROLL</h4>
+          <p id="score"></p>
+        </div>
+        <div class="panel-footer">
+          <h4>TOTAL SCORE</h4>
+          <p id="roll"></p>
         </div>
       </div>
-    </div>
+      <div class="button2">
+        <button type="button" name="button" class="btn btn-info" onclick="roll()">ROLL DICE</button>
+        <button type="button" name="button" class="btn btn-info" id="hold">HOLD</button>
+      </div>
+      <div class="alert alert-success" role="alert">
+        <h2>SORRY BUT YOU HAVE LOST</h2>
+      </div>
 </body>
 
 </html>

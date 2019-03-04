@@ -18,30 +18,12 @@ function roll2(){
   document.getElementById("roll1").innerHTML=totalScore;
 }
 
+//user interface logic
 $(document).ready(function(){
   $("#hold").click(function(){
     $("#total").fadeIn();
   })
+  $("").click(function(){
+
+  })
 })
-
-
-
-
-//
-// James Andere [8:21 AM]
-// var totalSum=[];
-// var sum=[];
-// var currentScore=0;
-// function roll() {
-//   var rollDice=document.getElementById('game').innerHTML=parseInt(Math.random()*6+1);
-//   // var diceRoll=document.getElementById('gam').innerHTML=parseInt(Math.random()*6+1);
-//   if(rollDice!=1){
-//       currentScore+=rollDice;
-//       // alert("the current score is" + currentScore);
-//       document.getElementById("round").innerHTML=currentScore;
-//   }
-//   else{
-//    currentScore=0;
-//   }
-//
-// };
