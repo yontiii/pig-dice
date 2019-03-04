@@ -27,6 +27,6 @@ $(document).ready(function(){
     $("#instructions").toggle(2000);
   })
   $("#hold2").click(function(){
-    $("#roll2").toggle(2000);
+    $("#total2").toggle(2000);
   })
 })
