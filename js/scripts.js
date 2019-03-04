@@ -26,4 +26,7 @@ $(document).ready(function(){
   $("#instruct").click(function(){
     $("#instructions").toggle(2000);
   })
+  $("#hold2").click(function(){
+    $("#roll2").toggle(2000);
+  })
 })
