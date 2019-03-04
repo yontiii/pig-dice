@@ -23,7 +23,7 @@ $(document).ready(function(){
   $("#hold").click(function(){
     $("#total").fadeIn();
   })
-  $("").click(function(){
-
+  $("#instruct").click(function(){
+    $("#instructions").toggle(2000);
   })
 })
