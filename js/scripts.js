@@ -21,7 +21,7 @@ function roll2(){
 //user interface logic
 $(document).ready(function(){
   $("#hold").click(function(){
-    $("#total").fadeIn();
+    $("#total").toggle(2000);
   })
   $("#instruct").click(function(){
     $("#instructions").toggle(2000);
