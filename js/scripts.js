@@ -7,7 +7,16 @@ function roll() {
   var totalScore = initScore += dice;
   output.unshift(score);
   console.log(output);
-  document.getElementById("roll1").innerHTML=totalScore;
+  if (dice==1){
+    $(document).ready(function(){
+      $("#player1").fadeOut(2000);
+      $("#alert1").slideUp(2000);
+    })
+  }
+  else{
+  document.getElementById("roll1").innerHTML=totalScore;  
+  }
+
 }
 
 
