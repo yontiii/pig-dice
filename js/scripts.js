@@ -9,12 +9,13 @@ function roll() {
   console.log(output);
   if (dice==1){
     $(document).ready(function(){
+      output.length =0;
       $("#player1").fadeOut(2000);
-      $("#alert1").slideUp(2000);
+      $("#alert1").fadeIn();
     })
   }
   else{
-  document.getElementById("roll1").innerHTML=totalScore;  
+  document.getElementById("roll1").innerHTML=totalScore;
   }
 
 }
@@ -25,6 +26,19 @@ function roll2(){
   var score = document.getElementById("score2").innerHTML=dice2;
   var newScore = initScore += dice2;
   document.getElementById("roll2").innerHTML=newScore;
+  if (dice2==1){
+    $(document).ready(function(){
+      $("#player2").fadeOut(2000);
+      $("#alert2").fadeIn();
+    })
+  }
+  else{
+  document.getElementById("roll1").innerHTML=totalScore;
+  }
+
+  if (totalScore>=100){
+    
+  }
 }
 
 //user interface logic
@@ -37,5 +51,13 @@ $(document).ready(function(){
   })
   $("#hold2").click(function(){
     $("#total2").toggle(2000);
+  })
+  $("#pass1").click(function(){
+    $("#alert1").fadeOut(2000);
+    $("#player2").toggle(2000);
+  })
+  $("#pass2").click(function(){
+    $("#alert2").toggle(2000);
+    $("#player2").toggle(2000);
   })
 })
