@@ -50,6 +50,14 @@ function roll2() {
   }
 }
 
+function start() {
+  location.reload();
+};
+
+function start2() {
+  location.reload();
+};
+
 //user interface logic
 $(document).ready(function() {
   $("#hold").click(function() {
