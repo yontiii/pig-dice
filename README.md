@@ -8,19 +8,19 @@ The project is written and coded by John Muasa Wathome, a junior web developer a
 
 # SETUP INSTRUCTIONS
 Once you load the program you go straight to the landing page where you will choose either player  two or player one.
-![landing page](images/landing.png)
+![landing page](images/play.png)
 
 You will press the **ROLL** button to continue making dice rolls.
 
-![values image](images/intro.png)
+![values image](images/value.png)
 
 If you roll value is equal to 1, you will recieve an error mmessagge telling you to pass the mouse to the next person.
 
-![see triangle image](images/quiz.png)
+![see triangle image](images/error.png)
 
 Continue rolling until a winner is reached.
 
-![Type image](images/submit.png)
+![Type image](images/congratsS.png)
 
 
 # BEHAVIOUR DRIVEN DEVELOPMENT

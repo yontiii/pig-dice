@@ -53,17 +53,15 @@ function roll2() {
 //user interface logic
 $(document).ready(function() {
   $("#hold").click(function() {
-    $("#total").toggle(2000);
-    $("#player1").hide();
-    $("#player2").toggle(2000);
+    $("#total").fadeIn(2000);
+    $("#throw1").fadeIn(2000);
   })
   $("#instruct").click(function() {
     $("#instructions").toggle(2000);
   })
   $("#hold2").click(function() {
-    $("#total2").toggle(2000);
-    $("#player2").hide(2000);
-    $("#player1").toggle(2000);
+    $("#total2").fadeIn(2000);
+    $("#throw2").fadeIn(2000);
   })
   $("#pass1").click(function() {
     $("#alert1").fadeOut(2000);
@@ -74,6 +72,17 @@ $(document).ready(function() {
     $("#player2").toggle(2000);
   })
   $("#restart").click(function() {
-    location.reload(true);
-  })
-})
+    $("#alert1").fadeOut(2000);
+    $("#player1").fadeIn(2000);
+  });
+
+  $("#throw1").click(function() {
+    $("#player1").fadeOut(2000);
+    $("#player2").slideDown(2000);
+  });
+
+  $("#throw2").click(function() {
+    $("#player2").fadeOut(2000);
+    $("#player1").slideDown(2000);
+  });
+});
